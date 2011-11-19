@@ -1,0 +1,12 @@
+{
+  "name" : "NodeKeynote"
+, "version" : "0.0.1"
+, "description" : "Project to create an keynote node presenter"
+, "homepage" : [  "https://github.com/aoqfonseca/nodekeynote"]
+, "repository" : { "type" : "git", "url" : "https://github.com/aoqfonseca/nodekeynote"}
+, "keywords" : ["keynote", "nodejs", "javascript", "code", "socket.io"]
+, "author" : "Andre Fonseca <aoqfonseca@gmail.com>"
+, "licenses" : ["MIT"]
+, "dependencies" : { }
+}
+
