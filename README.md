@@ -7,7 +7,6 @@ You need before install node.
 After, you need express and socket.io. For this, try npm install socket.io and npm install express.
 
 #AUTOR
-
 You can mail me: aoqfonseca at gmail.com
 Twitter: aoqfonseca
 
