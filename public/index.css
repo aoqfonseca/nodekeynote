@@ -7,7 +7,7 @@ body{
     font-size: 12px;
 }
 
-body div.header{
+div.header{
     border-bottom: 1px solid #3458A4;
     background-color: #3465A4;
 }
@@ -23,20 +23,35 @@ div.header ul.nav li a {
     font-size: 23px;
 }
 
-body div.header span {
+div.header span {
+    color:#ccc;
+    font-style: oblique;
     font-family: Devonshire, cursive;
     font-size: 23px;
     margin-left: 100px;
 }
 
-body div.header span strong{
+div.header span strong{
     font-size: 70px;
 }
 
-body div.content span small{
+div.content {
+    height: 100%;
+    margin-top: 10%;
 }
 
-body div.content a{
+div.content p{
+    background: -moz-radial-gradient(center 84px , ellipse , #888788 1%, #3474A4 60%) repeat scroll 0 0 transparent;
+    display: inline-block;
+    font-size: 23px;
+    line-height: 34px;
+    margin-left: 300px;
+    margin-right: 40px;
+    vertical-align: middle;
+    width: 400px;
+}
+
+div.content a{
     background: -moz-linear-gradient(center top , #FBC011, #FF7E00) repeat scroll 0 0 transparent;
     border-radius: 5px 5px 5px 5px;
     color: white;
@@ -50,7 +65,7 @@ body div.content a{
     width: 210px;
 }
 
-body div.content a:hover {
+div.content a:hover {
     background: -moz-linear-gradient(center top , #FFD866, #FF7E00) repeat scroll 0 0 transparent;
     cursor: pointer;
 }
