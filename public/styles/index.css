@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Devonshire);
 
 body{
-    background: #3474A4 url('img/line-tile.png');
+    background: #3474A4 url('/img/line-tile.png');
     color: #fff;
     font-family: Helvetica Neueu Light, Arial;
     font-size: 12px;
@@ -28,7 +28,7 @@ div.header ul.nav li{
 	margin: 10px 0;
 }
 
-div.header span {
+div.header h1 {
     color:#ccc;
 	display:inline-block;
     font-style: oblique;
@@ -38,7 +38,7 @@ div.header span {
 	margin-top: 10px;
 }
 
-div.header span strong{
+div.header h1 strong{
     font-size: 70px;
 }
 
