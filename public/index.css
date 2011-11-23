@@ -1,12 +1,8 @@
 body{
-/* fallback (Opera) */
     background: #222657;
-    /* Mozilla: */
-    background: -moz-radial-gradient(center, circle, rgba(0,0,155,0.6), #222657 100%);
-    /* Chrome, Safari:*/
-    background: -webkit-gradient(linear,
-                left top, left bottom, from(#222657), to(#000000));
+    background: -moz-radial-gradient(11px 50px , circle , rgba(0, 0, 155, 0.6), #222657 100%);
+    background: -webkit-gradient(linear,left top, left bottom, from(#222657), to(#000000));
+    color: #000;
     font-family: Helvetica Neueu Light, Arial;
     font-size: 12px;
-    color: #000;
 }
