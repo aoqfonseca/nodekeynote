@@ -23,17 +23,19 @@ div.header ul.nav {
     margin: 30px 110px;
 }
 
-div.header ul.nav li a {
-    color: white;
-    font-size: 23px;
+div.header ul.nav li{
+	display:inline-block;
+	margin: 10px 0;
 }
 
 div.header span {
     color:#ccc;
+	display:inline-block;
     font-style: oblique;
     font-family: Devonshire, cursive;
     font-size: 23px;
     margin-left: 100px;
+	margin-top: 10px;
 }
 
 div.header span strong{
@@ -41,8 +43,8 @@ div.header span strong{
 }
 
 div.content {
-    height: 100%;
-    margin-top: 10%;
+    height: 60%;
+    margin-top: 18%;
 }
 
 div.content p{
@@ -57,6 +59,7 @@ div.content p{
 
 div.content a{
     background: -moz-linear-gradient(center top , #FBC011, #FF7E00) repeat scroll 0 0 transparent;
+ 	background: -webkit-linear-gradient(top , #FBC011, #FF7E00) repeat scroll 0 0 transparent;
     border-radius: 5px 5px 5px 5px;
     color: white;
     display: inline-block;
@@ -71,5 +74,6 @@ div.content a{
 
 div.content a:hover {
     background: -moz-linear-gradient(center top , #FFD866, #FF7E00) repeat scroll 0 0 transparent;
+	background: -webkit-linear-gradient(top , #FFD866, #FF7E00) repeat scroll 0 0 transparent;
     cursor: pointer;
 }
