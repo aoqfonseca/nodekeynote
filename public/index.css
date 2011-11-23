@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Devonshire);
 
 body{
-    background: #3474A4 url('/img/line-tile.png');
+    background: #3474A4 url('img/line-tile.png');
     color: #fff;
     font-family: Helvetica Neueu Light, Arial;
     font-size: 12px;
@@ -10,6 +10,11 @@ body{
 div.header{
     border-bottom: 1px solid #3458A4;
     background-color: #3465A4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: -moz-linear-gradient(#3455A4, #3465A4) repeat scroll 0 0 transparent;
+    background: -webkit-linear-gradient(#3455A4, #3465A4) repeat scroll 0 0 transparent;
 }
 
 div.header ul.nav {
@@ -41,7 +46,6 @@ div.content {
 }
 
 div.content p{
-    background: -moz-radial-gradient(center 84px , ellipse , #888788 1%, #3474A4 60%) repeat scroll 0 0 transparent;
     display: inline-block;
     font-size: 23px;
     line-height: 34px;
