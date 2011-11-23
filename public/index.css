@@ -1,8 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Devonshire);
+
 body{
-    background: #222657;
-    background: -moz-radial-gradient(11px 50px , circle , rgba(0, 0, 155, 0.6), #222657 100%);
-    background: -webkit-gradient(linear,left top, left bottom, from(#222657), to(#000000));
-    color: #000;
+    background: #3474A4 url('/img/line-tile.png');
+    color: #fff;
     font-family: Helvetica Neueu Light, Arial;
     font-size: 12px;
+}
+
+body div.header{
+    border-bottom: 1px solid #3458A4;
+    background-color: #3465A4;
+}
+
+div.header ul.nav {
+    display: inline;
+    float: right;
+    margin: 30px 110px;
+}
+
+div.header ul.nav li a {
+    color: white;
+    font-size: 23px;
+}
+
+body div.header span {
+    font-family: Devonshire, cursive;
+    font-size: 23px;
+    margin-left: 100px;
+}
+
+body div.header span strong{
+    font-size: 70px;
+}
+
+body div.content span small{
+}
+
+body div.content a{
+    background: -moz-linear-gradient(center top , #FBC011, #FF7E00) repeat scroll 0 0 transparent;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    display: inline-block;
+    font-size: 34px;
+    height: 36px;
+    padding: 20px 10px;
+    text-align: center;
+    text-shadow: 1px 0 1px #C58C0B;
+    vertical-align: middle;
+    width: 210px;
+}
+
+body div.content a:hover {
+    background: -moz-linear-gradient(center top , #FFD866, #FF7E00) repeat scroll 0 0 transparent;
+    cursor: pointer;
 }
