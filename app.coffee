@@ -8,6 +8,8 @@ app.configure ->
     app.use app.router
 	app.set 'views', "#{__dirname}/views"
 	app.set 'view engine', 'jade'
+	app.use express.cookieParser();
+	app.use express.session({secret : "churupita" }) 
 
 
 ## Dev configs 
@@ -19,10 +21,17 @@ app.configure 'development', ->
 ##Prod configs
 app.configure 'prod', -> 
 	app.use express.errorHandler() 
-	
+
+#middleware for auth
+has_permission = (req,res, next) -> 
+	next()
+#	if res.session.user? and res.session.user=='chefe'
+#		next()
+#	else
+#		res.redirect('/error_invalid.html')
 
 ##Routes
-app.get "/speaker", (req, res) -> 
+app.get "/speaker", has_permission, (req, res) -> 
 	res.render 'speaker'
 
 
