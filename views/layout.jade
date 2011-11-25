@@ -1,0 +1,25 @@
+!!! 5
+head
+  meta(charset='utf-8')
+  title NodeKeynote
+  meta(name='description', content='site for make your  keynote on line')
+  meta(name='author', content='Andre Fonseca')
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  link(rel="stylesheet", href="styles/reset.css", type="text/css", media="screen", charset="utf-8")
+  link(rel="stylesheet", href="styles/index.css", type="text/css", media="screen", charset="utf-8")
+  script(src="//platform.twitter.com/widgets.js", defer, type="text/javascript")
+  script(src="https://apis.google.com/js/plusone.js", defer, type="text/javascript")
+
+body
+  .header
+    h1
+      strong Node Keynote
+      O melhor jeito de fazer a sua apresentacao
+    ul.nav
+      li
+        g:plusone(size="medium")
+      li
+        a(href="https://twitter.com/share", class="twitter-share-button", data-text="NodeKeynote melhor jeito de apresentar",data-count="horizontal", data-lang="pt") Tweet
+  
+  .container
+    != body

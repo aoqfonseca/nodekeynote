@@ -6,6 +6,8 @@ app.configure ->
     app.use express.methodOverride() 
     app.use express.bodyParser() 
     app.use app.router
+	app.set 'views', "#{__dirname}/views"
+	app.set 'view engine', 'jade'
 
 
 ## Dev configs 
@@ -16,8 +18,12 @@ app.configure 'development', ->
 
 ##Prod configs
 app.configure 'prod', -> 
-	app.use express.static(__dirname + '/public')
 	app.use express.errorHandler() 
+	
+
+##Routes
+app.get "/speaker", (req, res) -> 
+	res.render 'speaker'
 
 
 ## start server to listening */
