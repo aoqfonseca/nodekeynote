@@ -2,7 +2,7 @@ express = require 'express'
 app = express.createServer();
 
 ## Configurations
-app.configure -> 
+app.configure ->
     app.use express.methodOverride() 
     app.use express.bodyParser() 
     app.use app.router
@@ -10,11 +10,11 @@ app.configure ->
 	app.set 'view engine', 'jade'
 	app.use express.cookieParser();
 	app.use express.session({secret : "churupita" }) 
+	app.use express.static(__dirname + '/public')
 
 
 ## Dev configs 
 app.configure 'development', -> 
-	app.use express.static(__dirname + '/public')
 	app.use express.errorHandler({ dumpExceptions: true, showStack: true })
 
 
