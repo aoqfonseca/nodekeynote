@@ -1,6 +1,6 @@
 {
   "name" : "NodeKeynote",
-	"version" : "0.0.1",
+	"version" : "0.0.5",
 	"description" : "Project to create an keynote node presenter",
 	"homepage" : [  "https://github.com/aoqfonseca/nodekeynote"],
 	"repository" : { "type" : "git", "url" : "https://github.com/aoqfonseca/nodekeynote"},
