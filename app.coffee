@@ -1,6 +1,9 @@
 express = require 'express'
 app = express.createServer()
 
+io = require 'socket.io'
+sockets = io.listen(app)
+
 ## Configurations
 app.configure ->
     app.use express.methodOverride()
@@ -33,6 +36,11 @@ has_permission = (req,res, next) ->
 ##Routes
 app.get "/speaker", has_permission, (req, res) ->
 	res.render 'speaker'
+
+##Websockets parts
+sockets.on 'connection', (client) ->
+    client.on 'paginate', (pag) ->
+        sockets.broadcast.emit('changePage', pag)
 
 
 ## start server to listening */
