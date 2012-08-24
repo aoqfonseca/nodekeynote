@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/aoqfonseca/nodekeynote.png)](http://travis-ci.org/aoqfonseca/nodekeynote)
 #PROJECT
 This is an project in NodeJS and Socket.IO. I created this to stedy ths two technologies and make more easy present my keynotes.
 
