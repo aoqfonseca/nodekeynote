@@ -28,10 +28,6 @@ app.configure 'prod', ->
 #middleware for auth
 has_permission = (req,res, next) ->
 	next()
-#	if res.session.user? and res.session.user=='chefe'
-#		next()
-#	else
-#		res.redirect('/error_invalid.html')
 
 ##Routes
 app.get "/speaker", has_permission, (req, res) ->
@@ -39,8 +35,8 @@ app.get "/speaker", has_permission, (req, res) ->
 
 ##Websockets parts
 sockets.on 'connection', (client) ->
-    client.on 'paginate', (pag) ->
-        sockets.broadcast.emit('changePage', pag)
+    client.on 'next', (pag) ->
+        sockets.broadcast.emit('next', pag)
 
 
 ## start server to listening */
